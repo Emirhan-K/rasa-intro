@@ -1,0 +1,41 @@
+version: "3.1"
+
+intents:
+  - selamla
+  - hava_durumu_sorgula
+  - saat_sorgula
+  - vedalas
+  - tesekkur
+
+entities:
+- sehir
+
+slots:
+  sehir:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: sehir
+
+actions:
+- action_hava_durumu_sorgula
+- action_saat_sorgula
+
+responses:
+  utter_selamla:
+    - text: "Merhaba! Size nasıl yardımcı olabilirim?"
+ 
+
+  utter_hava_durumu_sorgula:
+    - text: "Hava durumuna bakmam için bana biraz zaman verin..."
+
+  utter_saat_sorgula:
+    - text: "Hemen saate bakıyorum..."
+
+  utter_vedalas:
+    - text: "Güle güle yine bekleriz."
+
+  utter_tesekkur:
+    - text: "Ben teşekkür ederim. Size yardımcı olabileceğim başka bir konu var mı?"
+
+

@@ -1,0 +1,19 @@
+version: "3.1"
+
+stories:
+  - story: selamla_senaryosu
+    steps:
+      - intent: selamla
+      - action: utter_selamla
+
+  - story: hava_durumu_sorgusu_senaryosu
+    steps:
+      - intent: hava_durumu_sorgula
+      - action: utter_hava_durumu_sorgula
+      - action: action_hava_durumu_sorgula
+
+  - story: saat_sorgusu_senaryosu
+    steps:
+      - intent: saat_sorgula
+      - action: utter_saat_sorgula
+      - action: action_saat_sorgula

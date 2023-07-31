@@ -1,0 +1,42 @@
+version: "3.1"
+
+nlu:
+- intent: selamla
+  examples: |
+    - merhaba
+    - selam
+    - hey
+    - naber
+    - alo
+    - sa
+
+- intent: vedalas
+  examples: |
+    - hoşçakal
+    - güle güle
+    - bay bay
+    
+- intent: tesekkur
+  examples: |
+    - Teşekkür ederim
+    - Sağol
+    - Teşekkürler
+    - Eyvallah
+
+
+- intent: hava_durumu_sorgula
+  examples: |
+    - hava durumu nasıl?
+    - bugün hava nasıl?
+    - hava durumu ne?
+    - hava nasıl?
+    - [Ankara](sehir) hava durumu
+    - [İstanbul](sehir) hava durumu
+    - [Adana](sehir) hava durumu
+
+- intent: saat_sorgula
+  examples: |
+    - saat kaç?
+    - şu an saat ne?
+    - saati söyler misin?
+    - zamanı söyler misin?

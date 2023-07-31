@@ -1,0 +1,35 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+stories:
+- story: Kullanıcı hava durumu sorguladığında
+  steps:
+  - user: |
+      Ankara hava durumu
+    intent: hava_durumu_sorgula
+  - action: utter_hava_durumu_sorgula
+  - action: action_hava_durumu_sorgula
+
+- story: Kullanıcı saat sorguladığında
+  steps:
+  - user: |
+      İstanbul saat kaç?
+    intent: saat_sorgula
+  - action: utter_saat_sorgula
+  - action: action_saat_sorgula
+  
+  - user: |
+      Teşekkür ederim
+    intent: tesekkur
+  - action: utter_tesekkur  
+
+- story: Selamla ve vedalaş
+  steps:
+  - user: |
+      merhaba
+    intent: selamla
+  - action: utter_selamla
+  - user: |
+      görüşürüz
+    intent: vedalas
+  - action: utter_vedalas

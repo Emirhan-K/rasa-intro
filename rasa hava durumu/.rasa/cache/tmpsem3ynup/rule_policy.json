@@ -1,0 +1,22 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"vedalas\"}}]": "utter_vedalas",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"vedalas\"}}, {\"prev_action\": {\"action_name\": \"utter_vedalas\"}, \"user\": {\"intent\": \"vedalas\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tesekkur\"}}]": "utter_tesekkur",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tesekkur\"}}, {\"prev_action\": {\"action_name\": \"utter_tesekkur\"}, \"user\": {\"intent\": \"tesekkur\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tesekkur\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"vedalas\"}}, {\"prev_action\": {\"action_name\": \"utter_vedalas\"}, \"user\": {\"intent\": \"vedalas\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"vedalas\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tesekkur\"}}, {\"prev_action\": {\"action_name\": \"utter_tesekkur\"}, \"user\": {\"intent\": \"tesekkur\"}}]"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-sehir",
+      "2": "I-sehir",
+      "3": "L-sehir",
+      "4": "U-sehir",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-sehir": 1,
+      "I-sehir": 2,
+      "L-sehir": 3,
+      "U-sehir": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

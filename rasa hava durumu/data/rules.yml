@@ -1,0 +1,14 @@
+version: "3.1"
+
+rules:
+
+- rule: Vedalasma_kurali
+  steps:
+  - intent: vedalas
+  - action: utter_vedalas
+
+- rule: Tesekkur_kurali
+  steps:
+  - intent: tesekkur
+  - action: utter_tesekkur
+
