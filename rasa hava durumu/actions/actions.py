@@ -28,7 +28,7 @@ class ActionHavaDurumuSorgula(Action):
         if sehir:
             try:
                 # Hava durumu API'sine istek yapma işlemi
-                api_key = "9608dec6f89301b8359a1c434a384e33"
+                api_key = "your_api_key"
                 base_url = "http://api.openweathermap.org/data/2.5/weather"
                 params = {
                     "q": sehir,
